@@ -1,0 +1,91 @@
+/*Header Styling*/
+header {
+    background-color: var(--color-accent);
+    color: var(--color-button-text);
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+nav ul li a {
+    color: var(--color-button-text);
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding: 20px;
+}
+
+/*Form Styling*/
+form {
+    width: 500px;
+}
+
+@media only screen and (max-width: 485px) {
+   form {
+       width: 275px;
+   }
+}
+
+form input[type="text"] {
+    padding: 10px;
+    margin: 5px 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+form input[type="submit"] {
+    padding: 10px 20px;
+    background-color: var(--color-button);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background-color: var(--color-button-hover);
+}
+
+/*Main Container Styling*/
+main {
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+    
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    gap: var(--section-gap);
+    width: 70%;
+}
+
+/* Remove padding from all child elements */
+main * {
+    padding: 0;
+    margin: 0;
+}
+
+.italic {
+    font-style: italic;
+}

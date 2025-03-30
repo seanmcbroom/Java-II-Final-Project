@@ -1,0 +1,94 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Mar 30, 2025, 4:22:45 PM
+    Author     : Sean McBroom
+*/
+
+@font-face {
+  font-family:
+    'Ubuntu Mono',
+    'Times New Roman' monospace;
+  font-weight: 400;
+  font-style: normal;
+  src: url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+}
+
+/* color palette from <https://github.com/vuejs/theme> */
+:root {
+  --vt-c-white: #FAF9F6;
+  --vt-c-white-soft: #e1e1e1;
+  --vt-c-white-mute: #f2f2f2;
+
+  --vt-c-black: #2E3133;
+  --vt-c-black-soft: rgb(15, 18, 22);
+  --vt-c-black-mute: rgb(34, 34, 34);
+
+  --vt-c-accent: #383d3b;
+
+  --vt-c-button-light: var(--vt-c-black);
+  --vt-c-button-hover-light: var(--vt-c-black-mute);
+  --vt-c-button-text-color-light: #F7F3F5;
+  --vt-c-button-dark: #252525;
+  --vt-c-button-hover-dark: #272727;
+  --vt-c-button-text-color-dark: #fff;
+
+  --vt-c-divider-light-1: rgba(60, 60, 60, 0.29);
+  --vt-c-divider-light-2: rgba(60, 60, 60, 0.12);
+  --vt-c-divider-dark-1: rgba(84, 84, 84, 0.65);
+  --vt-c-divider-dark-2: rgba(84, 84, 84, 0.48);
+
+  --vt-c-text-light-1: var(--vt-c-black);
+  --vt-c-text-light-2: rgba(60, 60, 60, 0.66);
+  --vt-c-text-dark-1: var(--vt-c-white);
+  --vt-c-text-dark-2: rgba(250, 250, 250, 0.822);
+  
+  --color-background: var(--vt-c-white);
+  --color-background-soft: var(--vt-c-white-soft);
+  --color-background-mute: var(--vt-c-white-mute);
+
+  --color-accent: var(--vt-c-accent);
+
+  --color-button: var(--vt-c-button-light);
+  --color-button-hover: var(--vt-c-button-hover-light);
+  --color-button-text: var(--vt-c-button-text-color-light);
+
+  --color-border: var(--vt-c-divider-light-2);
+  --color-border-hover: var(--vt-c-divider-light-1);
+
+  --color-heading: var(--vt-c-text-light-1);
+  --color-text: var(--vt-c-text-light-1);
+
+  --section-gap: 10px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  font-weight: normal;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+
+  transition: ease color 0.5s;
+  line-height: 1.6;
+
+  background-color: var(--color-background);
+  color: var(--color-text);
+
+  font-family: 'Ubuntu Mono', 'Times New Roman', monospace;
+  font-size: 15px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img {
+  user-select: none;
+}
